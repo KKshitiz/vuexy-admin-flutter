@@ -1,0 +1,14 @@
+# The directory where the template and translated arb files are located
+arb-dir: lib/l10n
+# The template arb file that will be used as the basis for generating the Dart localization and messages files
+template-arb-file: app_en.arb
+# The filename for the output localization and localizations delegate classes
+output-localization-file: app_localizations.dart
+# The location of a file that describes the localization  messages have not been translated yet
+untranslated-messages-file: lib/generated/l10n/untranslated_strings.json
+# The Dart class name to use for the output localization and localizations delegate classes
+output-class: AppLocalizations
+# The directory where the generated localization classes will be written. This option works only when synthetic-package option is set to false
+output-dir: lib/generated/l10n
+# Determines  whether or not the generated output files will be generated as a synthetic package or at a  specified directory in the Flutter project.
+synthetic-package: false

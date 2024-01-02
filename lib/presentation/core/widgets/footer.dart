@@ -8,7 +8,7 @@ class Footer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text("© ${Utils.getCurrentYear().toString()} Made with 💓 by Kshitiz")
+        Text("© ${Utils.getCurrentYear().toString()} Made with 💓 by Kshitiz"),
       ],
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vuexy_flutter/generated/l10n/app_localizations.dart';
 
 class SideBar extends StatelessWidget {
   const SideBar({super.key});
@@ -8,11 +9,11 @@ class SideBar extends StatelessWidget {
     return SizedBox(
       width: 300,
       child: ListView(
-        children: const [
+        children: [
           ExpansionTile(
-            title: Text("Dashboards"),
+            title: Text(AppLocalizations.of(context)!.helloWorld),
           ),
-          ExpansionTile(
+          const ExpansionTile(
             title: Text("Front pages"),
           ),
         ],

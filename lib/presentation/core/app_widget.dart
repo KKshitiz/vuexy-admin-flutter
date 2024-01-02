@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vuexy_flutter/generated/l10n/app_localizations.dart';
 import 'package:vuexy_flutter/presentation/core/pages/home_page.dart';
 
 class AppWidget extends StatelessWidget {
@@ -13,6 +14,8 @@ class AppWidget extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: const HomePage(),
     );
   }
