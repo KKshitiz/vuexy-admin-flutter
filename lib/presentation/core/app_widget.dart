@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vuexy_flutter/generated/l10n/app_localizations.dart';
 import 'package:vuexy_flutter/presentation/core/pages/home_page.dart';
+import 'package:vuexy_flutter/presentation/core/styles/theme.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -8,12 +9,11 @@ class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-        useMaterial3: true,
-      ),
+      theme: AppThemes.light,
+      darkTheme: AppThemes.dark,
+      themeMode: ThemeMode.light,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       home: const HomePage(),

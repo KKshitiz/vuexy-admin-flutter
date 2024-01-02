@@ -11,10 +11,16 @@ class SideBar extends StatelessWidget {
       child: ListView(
         children: [
           ExpansionTile(
-            title: Text(AppLocalizations.of(context)!.helloWorld),
+            leading: const Icon(Icons.home_outlined),
+            title: Text(AppLocalizations.of(context).dashboards),
+            children: [
+              ListTile(
+                title: Text(AppLocalizations.of(context).analytics),
+              ),
+            ],
           ),
-          const ExpansionTile(
-            title: Text("Front pages"),
+          ExpansionTile(
+            title: Text(AppLocalizations.of(context).frontPages),
           ),
         ],
       ),
