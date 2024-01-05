@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vuexy_flutter/domain/core/models/profile_avatar_status.dart';
 import 'package:vuexy_flutter/presentation/core/widgets/buttons/icon_button.dart';
 import 'package:vuexy_flutter/presentation/core/widgets/profile_avatar.dart';
 
@@ -45,7 +46,7 @@ class Header extends StatelessWidget {
             icon: const Icon(Icons.notifications_none_outlined)),
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 15),
-          child: ProfileAvatar(isOnline: true),
+          child: ProfileAvatar(status: ProfileAvatarStatus.online),
         ),
       ],
     );
