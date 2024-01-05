@@ -3,31 +3,51 @@ import 'package:vuexy_flutter/presentation/core/widgets/buttons/icon_button.dart
 import 'package:vuexy_flutter/presentation/core/widgets/profile_avatar.dart';
 
 class Header extends StatelessWidget {
-  const Header({super.key});
+  Header({super.key});
+
+  final _focusNode = FocusNode();
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Container(
-        child: Row(
-          children: [
-            AppIconButton(
-                onPressed: () {
-                  Scaffold.of(context).openDrawer();
-                },
-                icon: const Icon(Icons.menu)),
-            AppIconButton(onPressed: () {}, icon: const Icon(Icons.search)),
-            AppIconButton(onPressed: () {}, icon: const Icon(Icons.translate)),
-            AppIconButton(
-                onPressed: () {}, icon: const Icon(Icons.dark_mode_outlined)),
-            AppIconButton(
-                onPressed: () {},
-                notificationCount: 5,
-                icon: const Icon(Icons.notifications_none_outlined)),
-            const ProfileAvatar(isOnline: true),
-          ],
-        ),
+    return AppBar(
+      automaticallyImplyLeading: false,
+      scrolledUnderElevation: 20,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      elevation: 10,
+      title: Row(
+        children: [
+          AppIconButton(
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              icon: const Icon(Icons.menu)),
+          AppIconButton(
+              onPressed: () {
+                _focusNode.requestFocus();
+              },
+              icon: const Icon(Icons.search)),
+          Expanded(
+            child: TextField(
+              decoration: const InputDecoration.collapsed(
+                  hintText: " Press Ctrl + K to search"),
+              focusNode: _focusNode,
+            ),
+          ),
+        ],
       ),
+      actions: [
+        AppIconButton(onPressed: () {}, icon: const Icon(Icons.translate)),
+        AppIconButton(
+            onPressed: () {}, icon: const Icon(Icons.dark_mode_outlined)),
+        AppIconButton(
+            onPressed: () {},
+            notificationCount: 5,
+            icon: const Icon(Icons.notifications_none_outlined)),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 15),
+          child: ProfileAvatar(isOnline: true),
+        ),
+      ],
     );
   }
 }
