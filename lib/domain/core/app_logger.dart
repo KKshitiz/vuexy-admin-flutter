@@ -55,27 +55,27 @@ class _AppLogger implements AppLoggerInteface {
 
   @override
   debug(message, {DateTime? time, Object? error, StackTrace? stackTrace}) {
-    logger.d("Debug log");
+    logger.d(message, time: time, error: error, stackTrace: stackTrace);
   }
 
   @override
   info(message, {DateTime? time, Object? error, StackTrace? stackTrace}) {
-    logger.i("Info log");
+    logger.i(message, time: time, error: error, stackTrace: stackTrace);
   }
 
   @override
   warning(message, {DateTime? time, Object? error, StackTrace? stackTrace}) {
-    logger.w("Warning log");
+    logger.w(message, time: time, error: error, stackTrace: stackTrace);
   }
 
   @override
   error(message, {DateTime? time, Object? error, StackTrace? stackTrace}) {
-    logger.e("Error log");
+    logger.e(message, time: time, error: error, stackTrace: stackTrace);
   }
 
   @override
   fatal(message, {DateTime? time, Object? error, StackTrace? stackTrace}) {
-    logger.f("What a fatal log");
+    logger.f(message, time: time, error: error, stackTrace: stackTrace);
   }
 
   @override
