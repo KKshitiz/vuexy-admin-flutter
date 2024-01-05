@@ -20,6 +20,39 @@ class AppLocalizationsEs extends AppLocalizations {
   String get frontPages => 'Front pages';
 
   @override
+  String get layouts => 'Layouts';
+
+  @override
+  String get collapsedMenu => 'Collapsed menu';
+
+  @override
+  String get contentNavbar => 'Content navbar';
+
+  @override
+  String get contentNavbarPlusSidebar => 'Content nav + Sidebar';
+
+  @override
+  String get horizontal => 'Horizontal';
+
+  @override
+  String get withoutMenu => 'Without menu';
+
+  @override
+  String get withoutNavbar => 'Without navbar';
+
+  @override
+  String get fluid => 'Fluid';
+
+  @override
+  String get container => 'Container';
+
+  @override
+  String get blank => 'Blank';
+
+  @override
+  String get kanban => 'Kanban';
+
+  @override
   String get landing => 'Landing';
 
   @override
@@ -44,13 +77,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get dashboard => 'Dashboard';
 
   @override
-  String get product => 'Product';
+  String get products => 'Products';
 
   @override
-  String get list => 'List';
+  String get productList => 'Product list';
 
   @override
-  String get add => 'Add';
+  String get addProduct => 'Add product';
+
+  @override
+  String get categoryList => 'Category list';
 
   @override
   String get preview => 'Preview';
@@ -65,10 +101,31 @@ class AppLocalizationsEs extends AppLocalizations {
   String get order => 'Order';
 
   @override
-  String get details => 'Details';
+  String get orderList => 'Order list';
+
+  @override
+  String get orderDetails => 'Order details';
 
   @override
   String get customer => 'Customer';
+
+  @override
+  String get allCustomers => 'All customers';
+
+  @override
+  String get customerDetails => 'Customer details';
+
+  @override
+  String get overview => 'Overview';
+
+  @override
+  String get security => 'Security';
+
+  @override
+  String get addressAndBilling => 'Address and Billing';
+
+  @override
+  String get notifications => 'Notifications';
 
   @override
   String get manageReview => 'Manage review';
@@ -78,6 +135,18 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get settings => 'Settings';
+
+  @override
+  String get storeDetails => 'Store details';
+
+  @override
+  String get payments => 'Payments';
+
+  @override
+  String get shippingAndDelivery => 'Shipping and Delivery';
+
+  @override
+  String get locations => 'Locations';
 
   @override
   String get academy => 'Academy';
@@ -107,7 +176,25 @@ class AppLocalizationsEs extends AppLocalizations {
   String get invoice => 'Invoice';
 
   @override
-  String get user => 'User';
+  String get list => 'List';
+
+  @override
+  String get add => 'Add';
+
+  @override
+  String get users => 'Users';
+
+  @override
+  String get view => 'View';
+
+  @override
+  String get account => 'Account';
+
+  @override
+  String get billingAndPlans => 'Billing and plans';
+
+  @override
+  String get connections => 'Connections';
 
   @override
   String get rolesAndPermissions => 'Roles and permissions';
@@ -123,6 +210,15 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get userProfile => 'User profile';
+
+  @override
+  String get teams => 'Teams';
+
+  @override
+  String get projects => 'Projects';
+
+  @override
+  String get error => 'Error';
 
   @override
   String get accountSettings => 'Account settings';
@@ -168,6 +264,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get wizardExamples => 'Wizard examples';
+
+  @override
+  String get modalExamples => 'Modal examples';
 
   @override
   String get propertyListing => 'Property listing';
@@ -266,6 +365,33 @@ class AppLocalizationsEs extends AppLocalizations {
   String get formsAndTables => 'Forms and tables';
 
   @override
+  String get basicInputs => 'Basic inputs';
+
+  @override
+  String get inputGroups => 'Input groups';
+
+  @override
+  String get customOptions => 'Custom options';
+
+  @override
+  String get fileUpload => 'File upload';
+
+  @override
+  String get pickers => 'Pickers';
+
+  @override
+  String get selectAndTags => 'Select and tags';
+
+  @override
+  String get sliders => 'Sliders';
+
+  @override
+  String get switches => 'Switches';
+
+  @override
+  String get extras => 'Extras';
+
+  @override
   String get formElements => 'Form elements';
 
   @override
@@ -317,6 +443,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get formLayouts => 'Form layouts';
 
   @override
+  String get verticalForm => 'Vertical form';
+
+  @override
+  String get horizontalForm => 'Horizontal form';
+
+  @override
+  String get stickyActions => 'Sticky actions';
+
+  @override
   String get formWizard => 'Form wizard';
 
   @override
@@ -332,10 +467,16 @@ class AppLocalizationsEs extends AppLocalizations {
   String get simpleTable => 'Simple table';
 
   @override
-  String get dataTable => 'Data table';
+  String get dataTables => 'Data tables';
+
+  @override
+  String get advanced => 'Advanced';
 
   @override
   String get charts => 'Charts';
+
+  @override
+  String get chartsAndMaps => 'Charts and maps';
 
   @override
   String get others => 'Others';

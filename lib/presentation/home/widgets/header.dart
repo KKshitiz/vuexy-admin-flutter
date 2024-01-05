@@ -11,7 +11,11 @@ class Header extends StatelessWidget {
       child: Container(
         child: Row(
           children: [
-            AppIconButton(onPressed: () {}, icon: const Icon(Icons.menu)),
+            AppIconButton(
+                onPressed: () {
+                  Scaffold.of(context).openDrawer();
+                },
+                icon: const Icon(Icons.menu)),
             AppIconButton(onPressed: () {}, icon: const Icon(Icons.search)),
             AppIconButton(onPressed: () {}, icon: const Icon(Icons.translate)),
             AppIconButton(

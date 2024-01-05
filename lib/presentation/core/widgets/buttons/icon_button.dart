@@ -16,13 +16,18 @@ class AppIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final iconButton = IconButton(
       onPressed: onPressed,
+      iconSize: 28,
       icon: icon,
       tooltip: tooltip,
     );
     return notificationCount == null
         ? iconButton
         : Badge.count(
+            alignment: Alignment.topRight,
+            offset: const Offset(0, 0),
             count: notificationCount!,
+            padding: const EdgeInsets.symmetric(horizontal: 7),
+            largeSize: 20,
             child: iconButton,
           );
   }

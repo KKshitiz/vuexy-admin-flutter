@@ -123,6 +123,72 @@ abstract class AppLocalizations {
   /// **'Front pages'**
   String get frontPages;
 
+  /// No description provided for @layouts.
+  ///
+  /// In en, this message translates to:
+  /// **'Layouts'**
+  String get layouts;
+
+  /// No description provided for @collapsedMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Collapsed menu'**
+  String get collapsedMenu;
+
+  /// No description provided for @contentNavbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Content navbar'**
+  String get contentNavbar;
+
+  /// No description provided for @contentNavbarPlusSidebar.
+  ///
+  /// In en, this message translates to:
+  /// **'Content nav + Sidebar'**
+  String get contentNavbarPlusSidebar;
+
+  /// No description provided for @horizontal.
+  ///
+  /// In en, this message translates to:
+  /// **'Horizontal'**
+  String get horizontal;
+
+  /// No description provided for @withoutMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Without menu'**
+  String get withoutMenu;
+
+  /// No description provided for @withoutNavbar.
+  ///
+  /// In en, this message translates to:
+  /// **'Without navbar'**
+  String get withoutNavbar;
+
+  /// No description provided for @fluid.
+  ///
+  /// In en, this message translates to:
+  /// **'Fluid'**
+  String get fluid;
+
+  /// No description provided for @container.
+  ///
+  /// In en, this message translates to:
+  /// **'Container'**
+  String get container;
+
+  /// No description provided for @blank.
+  ///
+  /// In en, this message translates to:
+  /// **'Blank'**
+  String get blank;
+
+  /// No description provided for @kanban.
+  ///
+  /// In en, this message translates to:
+  /// **'Kanban'**
+  String get kanban;
+
   /// No description provided for @landing.
   ///
   /// In en, this message translates to:
@@ -171,23 +237,29 @@ abstract class AppLocalizations {
   /// **'Dashboard'**
   String get dashboard;
 
-  /// No description provided for @product.
+  /// No description provided for @products.
   ///
   /// In en, this message translates to:
-  /// **'Product'**
-  String get product;
+  /// **'Products'**
+  String get products;
 
-  /// No description provided for @list.
+  /// No description provided for @productList.
   ///
   /// In en, this message translates to:
-  /// **'List'**
-  String get list;
+  /// **'Product list'**
+  String get productList;
 
-  /// No description provided for @add.
+  /// No description provided for @addProduct.
   ///
   /// In en, this message translates to:
-  /// **'Add'**
-  String get add;
+  /// **'Add product'**
+  String get addProduct;
+
+  /// No description provided for @categoryList.
+  ///
+  /// In en, this message translates to:
+  /// **'Category list'**
+  String get categoryList;
 
   /// No description provided for @preview.
   ///
@@ -213,17 +285,59 @@ abstract class AppLocalizations {
   /// **'Order'**
   String get order;
 
-  /// No description provided for @details.
+  /// No description provided for @orderList.
   ///
   /// In en, this message translates to:
-  /// **'Details'**
-  String get details;
+  /// **'Order list'**
+  String get orderList;
+
+  /// No description provided for @orderDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Order details'**
+  String get orderDetails;
 
   /// No description provided for @customer.
   ///
   /// In en, this message translates to:
   /// **'Customer'**
   String get customer;
+
+  /// No description provided for @allCustomers.
+  ///
+  /// In en, this message translates to:
+  /// **'All customers'**
+  String get allCustomers;
+
+  /// No description provided for @customerDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Customer details'**
+  String get customerDetails;
+
+  /// No description provided for @overview.
+  ///
+  /// In en, this message translates to:
+  /// **'Overview'**
+  String get overview;
+
+  /// No description provided for @security.
+  ///
+  /// In en, this message translates to:
+  /// **'Security'**
+  String get security;
+
+  /// No description provided for @addressAndBilling.
+  ///
+  /// In en, this message translates to:
+  /// **'Address and Billing'**
+  String get addressAndBilling;
+
+  /// No description provided for @notifications.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notifications;
 
   /// No description provided for @manageReview.
   ///
@@ -242,6 +356,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Settings'**
   String get settings;
+
+  /// No description provided for @storeDetails.
+  ///
+  /// In en, this message translates to:
+  /// **'Store details'**
+  String get storeDetails;
+
+  /// No description provided for @payments.
+  ///
+  /// In en, this message translates to:
+  /// **'Payments'**
+  String get payments;
+
+  /// No description provided for @shippingAndDelivery.
+  ///
+  /// In en, this message translates to:
+  /// **'Shipping and Delivery'**
+  String get shippingAndDelivery;
+
+  /// No description provided for @locations.
+  ///
+  /// In en, this message translates to:
+  /// **'Locations'**
+  String get locations;
 
   /// No description provided for @academy.
   ///
@@ -297,11 +435,47 @@ abstract class AppLocalizations {
   /// **'Invoice'**
   String get invoice;
 
-  /// No description provided for @user.
+  /// No description provided for @list.
   ///
   /// In en, this message translates to:
-  /// **'User'**
-  String get user;
+  /// **'List'**
+  String get list;
+
+  /// No description provided for @add.
+  ///
+  /// In en, this message translates to:
+  /// **'Add'**
+  String get add;
+
+  /// No description provided for @users.
+  ///
+  /// In en, this message translates to:
+  /// **'Users'**
+  String get users;
+
+  /// No description provided for @view.
+  ///
+  /// In en, this message translates to:
+  /// **'View'**
+  String get view;
+
+  /// No description provided for @account.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get account;
+
+  /// No description provided for @billingAndPlans.
+  ///
+  /// In en, this message translates to:
+  /// **'Billing and plans'**
+  String get billingAndPlans;
+
+  /// No description provided for @connections.
+  ///
+  /// In en, this message translates to:
+  /// **'Connections'**
+  String get connections;
 
   /// No description provided for @rolesAndPermissions.
   ///
@@ -332,6 +506,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'User profile'**
   String get userProfile;
+
+  /// No description provided for @teams.
+  ///
+  /// In en, this message translates to:
+  /// **'Teams'**
+  String get teams;
+
+  /// No description provided for @projects.
+  ///
+  /// In en, this message translates to:
+  /// **'Projects'**
+  String get projects;
+
+  /// No description provided for @error.
+  ///
+  /// In en, this message translates to:
+  /// **'Error'**
+  String get error;
 
   /// No description provided for @accountSettings.
   ///
@@ -422,6 +614,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Wizard examples'**
   String get wizardExamples;
+
+  /// No description provided for @modalExamples.
+  ///
+  /// In en, this message translates to:
+  /// **'Modal examples'**
+  String get modalExamples;
 
   /// No description provided for @propertyListing.
   ///
@@ -615,6 +813,60 @@ abstract class AppLocalizations {
   /// **'Forms and tables'**
   String get formsAndTables;
 
+  /// No description provided for @basicInputs.
+  ///
+  /// In en, this message translates to:
+  /// **'Basic inputs'**
+  String get basicInputs;
+
+  /// No description provided for @inputGroups.
+  ///
+  /// In en, this message translates to:
+  /// **'Input groups'**
+  String get inputGroups;
+
+  /// No description provided for @customOptions.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom options'**
+  String get customOptions;
+
+  /// No description provided for @fileUpload.
+  ///
+  /// In en, this message translates to:
+  /// **'File upload'**
+  String get fileUpload;
+
+  /// No description provided for @pickers.
+  ///
+  /// In en, this message translates to:
+  /// **'Pickers'**
+  String get pickers;
+
+  /// No description provided for @selectAndTags.
+  ///
+  /// In en, this message translates to:
+  /// **'Select and tags'**
+  String get selectAndTags;
+
+  /// No description provided for @sliders.
+  ///
+  /// In en, this message translates to:
+  /// **'Sliders'**
+  String get sliders;
+
+  /// No description provided for @switches.
+  ///
+  /// In en, this message translates to:
+  /// **'Switches'**
+  String get switches;
+
+  /// No description provided for @extras.
+  ///
+  /// In en, this message translates to:
+  /// **'Extras'**
+  String get extras;
+
   /// No description provided for @formElements.
   ///
   /// In en, this message translates to:
@@ -717,6 +969,24 @@ abstract class AppLocalizations {
   /// **'Form layouts'**
   String get formLayouts;
 
+  /// No description provided for @verticalForm.
+  ///
+  /// In en, this message translates to:
+  /// **'Vertical form'**
+  String get verticalForm;
+
+  /// No description provided for @horizontalForm.
+  ///
+  /// In en, this message translates to:
+  /// **'Horizontal form'**
+  String get horizontalForm;
+
+  /// No description provided for @stickyActions.
+  ///
+  /// In en, this message translates to:
+  /// **'Sticky actions'**
+  String get stickyActions;
+
   /// No description provided for @formWizard.
   ///
   /// In en, this message translates to:
@@ -747,17 +1017,29 @@ abstract class AppLocalizations {
   /// **'Simple table'**
   String get simpleTable;
 
-  /// No description provided for @dataTable.
+  /// No description provided for @dataTables.
   ///
   /// In en, this message translates to:
-  /// **'Data table'**
-  String get dataTable;
+  /// **'Data tables'**
+  String get dataTables;
+
+  /// No description provided for @advanced.
+  ///
+  /// In en, this message translates to:
+  /// **'Advanced'**
+  String get advanced;
 
   /// No description provided for @charts.
   ///
   /// In en, this message translates to:
   /// **'Charts'**
   String get charts;
+
+  /// No description provided for @chartsAndMaps.
+  ///
+  /// In en, this message translates to:
+  /// **'Charts and maps'**
+  String get chartsAndMaps;
 
   /// No description provided for @others.
   ///

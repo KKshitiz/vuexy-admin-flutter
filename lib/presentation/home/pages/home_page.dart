@@ -11,9 +11,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      drawer: SideBar(),
       body: Row(
         children: [
-          SideBar(),
+          // SideBar(),
           Expanded(
             child: Column(
               children: [
