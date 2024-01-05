@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 class SidebarTile extends StatelessWidget {
@@ -6,10 +7,12 @@ class SidebarTile extends StatelessWidget {
     this.children,
     required this.title,
     this.icon,
+    this.path,
   });
 
   final String title;
   final Icon? icon;
+  final String? path;
   final List<SidebarTile>? children;
 
   @override
@@ -22,8 +25,17 @@ class SidebarTile extends StatelessWidget {
             children: children!,
           )
         : ListTile(
-            leading: icon,
+            leading: icon ??
+                const Icon(
+                  Icons.circle_outlined,
+                  size: 10,
+                ),
             title: Text(title),
+            onTap: () {
+              if (path != null) {
+                AutoRouter.of(context).navigateNamed(path!);
+              }
+            },
           );
   }
 }

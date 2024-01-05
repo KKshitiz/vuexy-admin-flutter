@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vuexy_flutter/generated/l10n/app_localizations.dart';
-import 'package:vuexy_flutter/presentation/core/widgets/sidebar_tile.dart';
+import 'package:vuexy_flutter/presentation/home/widgets/sidebar/sidebar_header.dart';
+import 'package:vuexy_flutter/presentation/home/widgets/sidebar/sidebar_tile.dart';
 
 class SideBar extends StatelessWidget {
   const SideBar({super.key});
@@ -10,7 +11,9 @@ class SideBar extends StatelessWidget {
     return SizedBox(
       width: 300,
       child: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
         children: [
+          const SidebarHeader(),
           SidebarTile(
             icon: const Icon(Icons.home_outlined),
             title: AppLocalizations.of(context).dashboards,
@@ -25,6 +28,7 @@ class SideBar extends StatelessWidget {
             ],
           ),
           SidebarTile(
+            icon: const Icon(Icons.copy),
             title: AppLocalizations.of(context).frontPages,
             children: [
               SidebarTile(title: AppLocalizations.of(context).landing),
@@ -84,6 +88,7 @@ class SideBar extends StatelessWidget {
           SidebarTile(title: AppLocalizations.of(context).chat),
           SidebarTile(title: AppLocalizations.of(context).calendar),
           SidebarTile(
+            icon: const Icon(Icons.edit_document),
             title: AppLocalizations.of(context).invoice,
             children: [
               SidebarTile(title: AppLocalizations.of(context).list),
@@ -93,6 +98,7 @@ class SideBar extends StatelessWidget {
             ],
           ),
           SidebarTile(
+            icon: const Icon(Icons.people),
             title: AppLocalizations.of(context).user,
             children: [
               SidebarTile(title: AppLocalizations.of(context).list),
@@ -100,6 +106,7 @@ class SideBar extends StatelessWidget {
             ],
           ),
           SidebarTile(
+            icon: const Icon(Icons.settings),
             title: AppLocalizations.of(context).rolesAndPermissions,
             children: [
               SidebarTile(title: AppLocalizations.of(context).roles),

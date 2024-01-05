@@ -5,7 +5,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'Vuexy Flutter Admin';
+  String get appTitle => 'Vuexy';
 
   @override
   String get dashboards => 'Dashboards';

@@ -96,7 +96,7 @@ abstract class AppLocalizations {
   /// The title of the app.
   ///
   /// In en, this message translates to:
-  /// **'Vuexy Flutter Admin'**
+  /// **'Vuexy'**
   String get appTitle;
 
   /// No description provided for @dashboards.
