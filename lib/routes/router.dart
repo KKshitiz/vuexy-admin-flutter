@@ -9,12 +9,17 @@ class AppRouter extends $AppRouter {
         AutoRoute(
           path: "/",
           page: HomeRoute.page,
+          children: const [],
+        ),
+        AutoRoute(
+          page: BlankRoute.page,
+          path: "/auth",
           children: [
-            AutoRoute(page: LoginRoute.page),
-            AutoRoute(page: RegistrationRoute.page),
-            AutoRoute(page: ForgotPasswordRoute.page),
-            AutoRoute(page: ResetPasswordRoute.page),
-            AutoRoute(page: TwoStepsRoute.page),
+            AutoRoute(page: LoginRoute.page, path: "login", initial: true),
+            AutoRoute(page: RegistrationRoute.page, path: "register"),
+            AutoRoute(page: ForgotPasswordRoute.page, path: "forgot-password"),
+            AutoRoute(page: ResetPasswordRoute.page, path: "reset-password"),
+            AutoRoute(page: TwoStepsRoute.page, path: "two-steps"),
           ],
         )
       ];

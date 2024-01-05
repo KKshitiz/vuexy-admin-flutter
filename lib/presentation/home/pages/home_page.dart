@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   children: [
                     Header(),
-                    const AutoRouter(),
+                    const Expanded(child: AutoRouter()),
                     const Footer(),
                   ],
                 ),
