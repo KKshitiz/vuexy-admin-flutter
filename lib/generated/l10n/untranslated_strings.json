@@ -166,6 +166,9 @@
     "admin",
     "profile",
     "billing",
-    "logout"
+    "logout",
+    "websiteAnalytics",
+    "totalConversionRate",
+    "spending"
   ]
 }

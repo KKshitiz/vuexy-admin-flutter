@@ -507,4 +507,15 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get logout => 'Logout';
+
+  @override
+  String get websiteAnalytics => 'Website analytics';
+
+  @override
+  String totalConversionRate(double percentage) {
+    return 'Total $percentage% conversion rate';
+  }
+
+  @override
+  String get spending => 'Spending';
 }

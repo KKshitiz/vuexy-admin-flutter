@@ -1,4 +1,5 @@
 {
+	"@@locale": "en",
 	"appTitle": "Vuexy",
 	"@appTitle": {
 		"description": "The title of the app."
@@ -169,5 +170,17 @@
 	"admin": "Admin",
 	"profile": "Profile",
 	"billing": "Billing",
-	"logout": "Logout"
+	"logout": "Logout",
+	"websiteAnalytics": "Website analytics",
+	"totalConversionRate": "Total {percentage}% conversion rate",
+	"@totalConversionRate": {
+		"description": "conversion rate",
+		"placeholders": {
+			"percentage": {
+				"type": "double",
+				"example": "23.9"
+			}
+		}
+	},
+	"spending": "Spending"
 }

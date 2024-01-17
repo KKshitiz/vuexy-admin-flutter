@@ -11,36 +11,38 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: const SideBar(),
-      body: RawKeyboardListener(
-        focusNode: FocusNode(),
-        onKey: (event) {
-          if (event is RawKeyDownEvent) {
-            debugPrint("Key down");
-            if (event.logicalKey == LogicalKeyboardKey.keyK &&
-                event.isControlPressed) {
-              debugPrint("K + Ctrl pressed");
+    return SelectionArea(
+      child: Scaffold(
+        drawer: const SideBar(),
+        body: RawKeyboardListener(
+          focusNode: FocusNode(),
+          onKey: (event) {
+            if (event is RawKeyDownEvent) {
+              debugPrint("Key down");
+              if (event.logicalKey == LogicalKeyboardKey.keyK &&
+                  event.isControlPressed) {
+                debugPrint("K + Ctrl pressed");
+              }
             }
-          }
-        },
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // SideBar(),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(14.0),
-                child: Column(
-                  children: [
-                    Header(),
-                    const Expanded(child: AutoRouter()),
-                    const Footer(),
-                  ],
+          },
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // SideBar(),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(14.0),
+                  child: Column(
+                    children: [
+                      Header(),
+                      const Expanded(child: AutoRouter()),
+                      const Footer(),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

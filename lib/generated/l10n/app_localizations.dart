@@ -1100,6 +1100,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Logout'**
   String get logout;
+
+  /// No description provided for @websiteAnalytics.
+  ///
+  /// In en, this message translates to:
+  /// **'Website analytics'**
+  String get websiteAnalytics;
+
+  /// conversion rate
+  ///
+  /// In en, this message translates to:
+  /// **'Total {percentage}% conversion rate'**
+  String totalConversionRate(double percentage);
+
+  /// No description provided for @spending.
+  ///
+  /// In en, this message translates to:
+  /// **'Spending'**
+  String get spending;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

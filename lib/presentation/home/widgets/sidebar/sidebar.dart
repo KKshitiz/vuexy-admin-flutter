@@ -26,6 +26,7 @@ class SideBar extends StatelessWidget {
                   children: [
                     SidebarTile(
                       title: AppLocalizations.of(context).analytics,
+                      path: "/dashboards/analytics",
                     ),
                     SidebarTile(title: AppLocalizations.of(context).crm),
                     SidebarTile(title: AppLocalizations.of(context).ecommerce),

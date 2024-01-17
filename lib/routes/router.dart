@@ -9,7 +9,28 @@ class AppRouter extends $AppRouter {
         AutoRoute(
           path: "/",
           page: HomeRoute.page,
-          children: const [],
+          children: [
+            AutoRoute(
+              page: AcademyDashboardRoute.page,
+              path: "dashboards/academy",
+            ),
+            AutoRoute(
+              page: AnalyticsDashboardRoute.page,
+              path: "dashboards/analytics",
+            ),
+            AutoRoute(
+              page: CrmDashboardRoute.page,
+              path: "dashboards/crm",
+            ),
+            AutoRoute(
+              page: EcommerceDashboardRoute.page,
+              path: "dashboards/ecommerce",
+            ),
+            AutoRoute(
+              page: LogisticsDashboardRoute.page,
+              path: "dashboards/logistics",
+            ),
+          ],
         ),
         AutoRoute(
           page: BlankRoute.page,
