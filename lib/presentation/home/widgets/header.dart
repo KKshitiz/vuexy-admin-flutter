@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:vuexy_flutter/application/core/theme_manager.dart';
 import 'package:vuexy_flutter/domain/core/models/profile_avatar_status.dart';
 import 'package:vuexy_flutter/presentation/core/widgets/buttons/icon_button.dart';
-import 'package:vuexy_flutter/presentation/core/widgets/profile_avatar.dart';
+import 'package:vuexy_flutter/presentation/core/widgets/custom/profile_avatar.dart';
 
 class Header extends StatelessWidget {
   Header({super.key});
@@ -39,7 +41,11 @@ class Header extends StatelessWidget {
       actions: [
         AppIconButton(onPressed: () {}, icon: const Icon(Icons.translate)),
         AppIconButton(
-            onPressed: () {}, icon: const Icon(Icons.dark_mode_outlined)),
+            onPressed: () {
+              Provider.of<ThemeManager>(context, listen: false)
+                  .updateThemeMode(ThemeMode.light);
+            },
+            icon: const Icon(Icons.dark_mode_outlined)),
         AppIconButton(
             onPressed: () {},
             notificationCount: 5,

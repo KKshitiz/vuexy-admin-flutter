@@ -1,13 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:vuexy_flutter/presentation/core/styles/colors.dart';
 
-class AppThemes {
-  static get light => lightThemeData;
-  static get dark => darkThemeData;
+enum AppTheme {
+  primary,
+  secondary,
+  ;
+
+  String toJson() => name;
+  static AppTheme fromString(String value) => values.byName(value);
 }
 
-final lightThemeData = ThemeData.light().copyWith(
-  colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
-);
+class AppThemeData {
+  static const Map<AppTheme, Color> themeToColorMap = {
+    AppTheme.primary: AppColors.primary,
+    AppTheme.secondary: AppColors.secondary,
+  };
 
-final darkThemeData = ThemeData.dark()
-    .copyWith(colorScheme: ColorScheme.fromSeed(seedColor: Colors.green));
+  static ThemeData generateThemeDataFromTheme(AppTheme theme) {
+    final Color themeColor = themeToColorMap[theme] ?? AppColors.primary;
+    final themeData = ThemeData.light().copyWith(
+      colorScheme: ColorScheme.fromSeed(seedColor: themeColor),
+      textTheme: ThemeData.light().textTheme,
+    );
+
+    return themeData;
+  }
+}
